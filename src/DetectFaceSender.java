@@ -60,7 +60,7 @@ public class DetectFaceSender extends javax.swing.JFrame
     private void initComponents() 
     {              
         JFrame frame = new JFrame(""); // create the frame
-        imageHolder = new javax.swing.JLabel(); // get a label for images
+        // imageHolder = new javax.swing.JLabel(); // get a label for images
         JButton captureButton = new javax.swing.JButton(); // make a button
         JPanel buttonPanel = new JPanel(); // make a panel to stick the button to
         captureButton.setText("Capture"); // names the button
@@ -75,7 +75,7 @@ public class DetectFaceSender extends javax.swing.JFrame
         buttonPanel.add(captureButton); // stick the button to the panel
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // what happens when the frame is closed
-        frame.getContentPane().add(imageHolder, BorderLayout.CENTER); // create the components, and put them in the frame
+        // frame.getContentPane().add(imageHolder, BorderLayout.CENTER); // create the components, and put them in the frame
         frame.pack(); // size it
         frame.setSize(640, 520);
         frame.setLocationRelativeTo(null); // center it
@@ -116,7 +116,7 @@ public class DetectFaceSender extends javax.swing.JFrame
         }
     }
     
-    private javax.swing.JLabel imageHolder; // just so that the things in livefeed know what it is
+    // private javax.swing.JLabel imageHolder; // just so that the things in livefeed know what it is
     
     public void LiveFeed() throws IOException, InterruptedException
     {        
@@ -182,7 +182,7 @@ public class DetectFaceSender extends javax.swing.JFrame
             	try 
             	{
                     frame = matToBufferedImage(src);
-                    imageHolder.setIcon(new ImageIcon(frame)); // puts an image on the label
+                    // imageHolder.setIcon(new ImageIcon(frame)); // puts an image on the label
                 } 
             	catch (NullPointerException e) 
             	{
